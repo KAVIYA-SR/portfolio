@@ -87,6 +87,7 @@ html {
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+    height:900px;
     background-color: rgba(240, 210, 210, 0.5);
 }
 .pic{
