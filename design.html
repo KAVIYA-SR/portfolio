@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="UTP-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link  rel="stylesheet" href="design.css">
+        <link  rel="stylesheet" media="screen and(max-width:800px)" href="tab.css" >
+        <link  rel="stylesheet" media="screen and(max-width:530px)" href="phone.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <script type="text/javascript">
+                function contact ( )
+                {
+                    if ( document.contact_form.name.value == "" )
+                    {
+                        alert ( "Please fill in the 'Your Name' box." );
+                        return false;
+                    }
+                    if(document.contact_form.email.value=="")
+                    {
+                        alert ( "Please fill in the 'Your email' box." );
+                        return  false;
+                    }
+                    if(document.contact_form.msg.value=="")
+                    {
+                        alert ( "Please fill in the 'Your message' box." );
+                        return false;
+                    }
+                    if(document.contact_form.name.value && document.contact_form.email.value && document.contact_form.msg.value )
+                    {
+                        alert("Your Message has been sended");
+                        return true;
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="main">
+            <h1 class="headings">I AM <br> KAVIYA SENTHIL</h1>
+            <button class="but">Download MY CV</button>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="headings">ABOUT ME</h1>
+            <div class="pic">
+                <img src="https://t2.gstatic.com/images?q=tbn:ANd9GcS85BfNSoI-qvZqN2x8uEpYU8WnL6jtZUCHrkEbfd_nNSHmiGMT" alt="">
+                <div id="intro">
+                    <h2>KAVIYA SENTHIL</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                       Lorem Ipsum has been the industry's standard dummy text ever since the 
+                       1500s,when an unknown printer took a galley of type and scrambled it to 
+                       make a type specimen book. It has survived not only five centuries, but 
+                       also the leap into electronic typesetting, remaining essentially unchanged.
+                       It was popularised in the 1960s with the release of Letraset sheets
+                       containing Lorem Ipsum passages, and more recently with desktop publishing
+                       software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="headings">MY SKILLS</h1>
+            <div class="skills_design">
+                <h2>Personal skills</h2>
+            <div class="sk">
+                <div class="sk_name">
+                    <i class="fa-brands fa-html5 icon" width="10"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="sk_percentage">
+                    <span>80%</span>
+                </div>
+                <div class="sk_bar html"></div>
+            </div>
+            <div class="sk">
+                <div class="sk_name">
+                    <i class="fa-brands fa-css3 icon"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="sk_percentage">
+                    <span>75%</span>
+                </div>
+                <div class="sk_bar css"></div>
+            </div>
+            <div class="sk">
+                <div class="sk_name">
+                    <i class="fa-brands fa-js icon"></i>
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="sk_percentage">
+                    <span>40%</span>
+                </div>
+                <div class="sk_bar js"></div>
+            </div>
+            <div class="sk">
+                <div class="sk_name">
+                    <i class="fa-brands fa-java icon"></i>
+                    <span>JAVA</span>
+                </div>
+                <div class="sk_percentage">
+                    <span>70%</span>
+                </div>
+                <div class="sk_bar java"></div>
+            </div>
+            </div>
+        </section>
+       
+        <section id="contact">
+            <h1 class="headings">CONTACT </h1>
+            <form name="contact_form"  action="" class="form" method="post" onsubmit="return contact();">
+                <input type="text" name="name" class="input" placeholder="Enter Your Name">
+                <input type="email" name="email" class="input" placeholder="Enter Your Email">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="SEND" id="send">
+            </form>
+            <h3 class="or">-------------------------or------------------------</h3>
+            <div class="link">
+                <a href="//linkedin.com/in/kaviya-senthil-177438257"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/ca_ndy5866?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+    </body>
+</html>
